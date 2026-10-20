@@ -1,0 +1,56 @@
+:root {
+  --noite: #152536;
+  --porta: #427D96;
+  --ambar: #E7AF62;
+  --creme: #F3E5CB;
+  --texto: #F3E5CB;
+  --suave: #b9c6cf;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--noite);
+  color: var(--texto);
+  font: 17px/1.6 Georgia, "Palatino Linotype", Palatino, serif;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 16px 40px;
+}
+
+.hero { text-align: center; margin-bottom: 48px; }
+.logo { width: 160px; height: 160px; border-radius: 50%; }
+h1 { font-size: 2.2rem; margin: 20px 0 8px; letter-spacing: .02em; }
+.doc h1 { font-size: 1.9rem; margin-top: 8px; }
+h2 { color: var(--ambar); font-size: 1.15rem; margin: 36px 0 8px; }
+.lede { color: var(--suave); font-size: 1.1rem; }
+.meta { color: var(--suave); font-size: .95rem; }
+
+a { color: var(--ambar); }
+a:hover { color: var(--creme); }
+
+.channels { list-style: none; padding: 0; margin: 0; }
+.channels li {
+  border-left: 3px solid var(--porta);
+  padding: 8px 0 8px 16px;
+  margin-bottom: 16px;
+}
+.channels a { font-size: 1.15rem; font-weight: bold; }
+.channels span { display: block; color: var(--suave); }
+
+.back { margin: 0; font-size: .95rem; }
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(243, 229, 203, .2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: .9rem;
+  color: var(--suave);
+}
